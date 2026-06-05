@@ -7,10 +7,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-700: oklch(52.7% 0.154 150.069);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -199,11 +204,17 @@
   .row-span-2 {
     grid-row: span 2 / span 2;
   }
+  .row-span-3 {
+    grid-row: span 3 / span 3;
+  }
   .row-start-1 {
     grid-row-start: 1;
   }
   .row-start-2 {
     grid-row-start: 2;
+  }
+  .row-start-3 {
+    grid-row-start: 3;
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -235,20 +246,8 @@
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
-  }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
-  }
-  .h-24 {
-    height: calc(var(--spacing) * 24);
   }
   .h-50 {
     height: calc(var(--spacing) * 50);
@@ -259,15 +258,6 @@
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
-  .h-150 {
-    height: calc(var(--spacing) * 150);
-  }
-  .h-240 {
-    height: calc(var(--spacing) * 240);
-  }
-  .h-1000 {
-    height: calc(var(--spacing) * 1000);
-  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -277,26 +267,14 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
+  .w-12 {
+    width: calc(var(--spacing) * 12);
   }
   .w-45 {
     width: calc(var(--spacing) * 45);
   }
-  .w-100 {
-    width: calc(var(--spacing) * 100);
-  }
-  .w-120 {
-    width: calc(var(--spacing) * 120);
-  }
   .w-125 {
     width: calc(var(--spacing) * 125);
-  }
-  .w-150 {
-    width: calc(var(--spacing) * 150);
-  }
-  .w-250 {
-    width: calc(var(--spacing) * 250);
   }
   .w-full {
     width: 100%;
@@ -365,14 +343,29 @@
   .border-green-700 {
     border-color: var(--color-green-700);
   }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
   .bg-green-700 {
     background-color: var(--color-green-700);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
